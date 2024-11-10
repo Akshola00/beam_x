@@ -7,9 +7,9 @@ import ConnectButton from "../lib/Connect";
 import useTheme from "@/app/components/internal/hooks/useTheme";
 import Link from "next/link";
 import MenuButton from "./MenuButton";
-import { Fira_Code } from 'next/font/google'
+import { Fira_Code } from "next/font/google";
 
-const fira_Code = Fira_Code({ subsets: ['latin'] })
+const fira_Code = Fira_Code({ subsets: ["latin"] });
 
 const Header = () => {
   const { address } = useAccount();
@@ -46,9 +46,7 @@ const Header = () => {
     >
       <header className="rounded-[12px] bg-primary-gradient md:rounded-[32px]">
         <div className="mx-auto flex h-16 max-w-[--header-max-w] items-center justify-between px-4 md:h-28 md:px-8">
-          <p className={`text-2xl ${fira_Code.className} font-bold`}>
-            BEAM X
-          </p>
+          <p className={`text-2xl ${fira_Code.className} font-bold`}>BEAM X</p>
 
           <Link href={"/"} className="block h-[35px] w-[35px] md:hidden">
             <img src="/assets/mobile-logo.png" alt="" />

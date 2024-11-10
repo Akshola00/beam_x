@@ -11,12 +11,13 @@ import Upright from "public/svg/Upright";
 import NetworkSwitcher from "./components/lib/NetworkSwitcher";
 import Header from "./components/internal/Header";
 import AddTokenButton from "./components/lib/AddToken";
+import Hero from "./components/internal/Hero";
 
 export default function Home() {
   return (
     <main className="flex min-h-svh flex-col justify-between gap-16">
       <Header />
-
+      <Hero />
     </main>
   );
 }
