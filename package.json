@@ -4,7 +4,7 @@
   "description": "An open-source starknet development stack",
   "bin": "./bin/cli.mjs",
   "scripts": {
-    "vercel-build": "npm install --legacy-peer-deps && next build",
+    "vercel-build": "npm install --legacy-peer-deps",
     "build-contracts": "cd contracts && scarb build",
     "test-contracts": "cd contracts && snforge test",
     "format-contracts": "cd contracts && scarb fmt",
